@@ -32,8 +32,33 @@ namespace JPSLibNamespace{
 
 	int JPSSearchFunctions::findIntItemInVector(int x[], int element, int max){
 		for (int i = 0; i < max; i++){
-			if (x[i] = element){
+			if (x[i] == element){
 				return i;
+			}
+		}
+		return -1;
+	}
+
+	int JPSSearchFunctions::findItemInOrdereVector(int x[], int item, int max, bool order){
+		if (order){
+			for (int i = 0; i < max; i++){
+				if (x[i] == item){
+					return i;
+				}
+				else if (x[i] > item){
+					return -1;
+				}
+			}
+		}
+		else
+		{
+			for (int i = max - 1; i >= 0; i--){
+				if (x[i] == item){
+					return i;
+				}
+				else if (x[i] > item){
+					return -1;
+				}
 			}
 		}
 		return -1;

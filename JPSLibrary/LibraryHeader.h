@@ -26,6 +26,8 @@ namespace JPSLibNamespace{
 		public:
 
 			static JPSLIBRARYDLL_API int findIntItemInVector(int x[], int item, int max);
+
+			static JPSLIBRARYDLL_API int findItemInOrdereVector(int x[], int item, int max, bool order);
 	};
 }
 
