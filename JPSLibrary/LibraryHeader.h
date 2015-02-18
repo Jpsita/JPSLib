@@ -25,8 +25,16 @@ namespace JPSLibNamespace{
 	{
 		public:
 
+			/*
+			Return the position of te ITEM int the X vector
+			*/
 			static JPSLIBRARYDLL_API int findIntItemInVector(int x[], int item, int max);
 
+			/*
+			Return the position of the  ITEM int the X vector
+			Order False = from 0 to MAX
+			Order True = from MAX to 0
+			*/
 			static JPSLIBRARYDLL_API int findItemInOrdereVector(int x[], int item, int max, bool order);
 	};
 }

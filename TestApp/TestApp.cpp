@@ -2,7 +2,7 @@
 //
 
 #include "stdafx.h"
-#include "LibraryHeader.h"
+#include "..\JPSLibrary\LibraryHeader.h"
 #include <iostream>
 
 int _tmain(int argc, _TCHAR* argv[])
